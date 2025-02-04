@@ -54,13 +54,13 @@ let
 
    sysconfupdate = pkgs.writeShellScriptBin "sysconfupdate" ''
     #!/usr/bin/env bash
-    cd /etc/nixos/
+    cd /home/asph/asphos/
     git pull
     sudo nixos-rebuild switch --flake ~/asphos/#Nix --impure
   '';
   sysconfrebuild = pkgs.writeShellScriptBin "sysconfrebuild" ''
     #!/usr/bin/env bash
-    cd /etc/nixos/
+    cd /home/asph/asphos/
     git add .
     git commit -m "nix config auto-commit"
     sudo nixos-rebuild switch --flake ~/asphos/#Nix --impure
@@ -68,9 +68,10 @@ let
 
   sysconfrebuildpush = pkgs.writeShellScriptBin "sysconfrebuildpush" ''
     #!/usr/bin/env bash
-    cd /etc/nixos/
+    cd /home/asph/asphos/
+    git pull -rebase
     git add .
-    git commit -m "config update"
+    git commit -m "Auto-update: $(date +"%Y-%m-%d %H:%M:%S")"
     sudo nixos-rebuild switch --flake ~/asphos/#Nix --impure
 
     if [ ! $? -eq "0" ]; then
