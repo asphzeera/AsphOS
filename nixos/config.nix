@@ -14,6 +14,7 @@ in
       ./config/fonts.nix
       ./config/scripts/script.nix
       ./config/nvidia.nix
+      ./config/pacotes/pacotes.nix
       inputs.home-manager.nixosModules.home-manager
      ];
 
@@ -110,37 +111,6 @@ in
       };
     };
   };
-
-  environment.systemPackages = with pkgs; [
-
-  #Hellwal
-  swww
-
-  #Editor
-  neovim 
-  #Coisas daqueles que programam dores
-  git 
-  wget
-
-  #Terminal
-  kitty
-
-  #Navegador
-  firefox
-
-  #Jogo
-  osu-lazer-bin
-
-  #firefogo
-  pywalfox-native
-
-  #CADE MEU MINININHO DE PAPAI
-  wofi
-
-  #Nix
-  home-manager
-  ];
-
 
   system.stateVersion = "24.11"; 
 }
