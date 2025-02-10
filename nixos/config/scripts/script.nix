@@ -10,7 +10,7 @@ let
 
     else
         # generate palette and templates from random image
-          hellwal --image "$wallpapers_path" --random
+          hellwal --image "$wallpapers_path/" --random
     fi
 
 
