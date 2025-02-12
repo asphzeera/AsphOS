@@ -2,8 +2,18 @@
 {
   environment.systemPackages = with pkgs; [
 
+  #Coisas daqueles que programam dores
+  git 
+  wget
+  fzf
+  st
+
   #Hellwal
   swww
+
+  #CADE MEU MINININHO DE PAPAI
+  wofi
+  vesktop
 
   #Editor
   neovim
@@ -12,17 +22,14 @@
   #Ate me esqueci, AH, lembrei
   jamesdsp
 
-  #Coisas daqueles que programam dores
-  git 
-  wget
-  fzf
-
-  #Terminal
-  alacritty 
-  st
-
   #Navegador
   firefox
+
+  #Terminal
+  alacritty
+
+  #Nix
+  home-manager
 
   #Jogo
   osu-lazer-bin
@@ -30,12 +37,10 @@
   #firefogo
   pywalfox-native
 
-  #CADE MEU MINININHO DE PAPAI
-  wofi
-  vesktop
+  #Editores de Imagem Video etc
+  gimp-with-plugins
+  inkscape-with-extensions
 
-  #Nix
-  home-manager
   ];
 
 }
