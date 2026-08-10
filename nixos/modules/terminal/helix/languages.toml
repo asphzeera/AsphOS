@@ -1,0 +1,46 @@
+[language-server]
+clangd = { command = "clangd" }
+jdtls = { command = "jdtls" }
+nil = { command = "nil" }
+nixd = { command = "nixd" }
+
+[language-server.mdpls]
+command = "mdpls"
+config = { markdown.preview.auto = true, markdown.preview.browser = "firefox" }
+
+[[language]]
+name = "markdown"
+language-servers = [ "mdpls" ] # Ensure this is plural: language-servers
+
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java", "jav", "pde"]
+roots = ["pom.xml", "build.gradle", "build.gradle.kts"]
+language-servers = [ "jdtls" ]
+indent = { tab-width = 2, unit = "  " }
+comment-tokens = ["//"]
+block-comment-tokens = { start = "/*", end = "*/" }
+
+[[language]]
+name = "nix"
+scope = "source.nix"
+injection-regex = "nix"
+file-types = ["nix"]
+shebangs = []
+comment-token = "#"
+block-comment-tokens = { start = "/*", end = "*/" }
+language-servers = [ "nil", "nixd" ]
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "nixfmt" }
+
+[[language]]
+name = "c"
+scope = "source.c"
+injection-regex = "c"
+file-types = ["c"] # TODO: ["h"]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+language-servers = [ "clangd" ]
+indent = { tab-width = 2, unit = "  " }

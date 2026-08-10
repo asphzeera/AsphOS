@@ -1,0 +1,95 @@
+"ui.background" = { bg = "background" }
+"ui.text" = { fg = "foreground" }
+"ui.text.focus" = { fg = "color7", modifiers = ["bold"] }
+"ui.cursor" = { fg = "background", bg = "foreground" }
+"ui.cursor.match" = { fg = "background", bg = "color3" }
+"ui.cursor.insert" = { fg = "background", bg = "color2" }
+"ui.cursor.select" = { fg = "background", bg = "color4" }
+"ui.selection" = { bg = "color8" }
+"ui.selection.primary" = { bg = "color3", fg = "background" }
+"ui.linenr" = { fg = "color8" }
+"ui.linenr.selected" = { fg = "color7", modifiers = ["bold"] }
+"ui.statusline" = { fg = "foreground", bg = "color8" }
+"ui.statusline.inactive" = { fg = "color8", bg = "background" }
+"ui.statusline.normal" = { fg = "background", bg = "color4", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "background", bg = "color2", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "background", bg = "color3", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "color8", bg = "background" }
+"ui.bufferline.active" = { fg = "foreground", bg = "color8", modifiers = ["bold"] }
+"ui.popup" = { fg = "foreground", bg = "color8" }
+"ui.window" = { fg = "color8" }
+"ui.help" = { fg = "foreground", bg = "color8" }
+"ui.menu" = { fg = "foreground", bg = "color8" }
+"ui.menu.selected" = { fg = "background", bg = "color4" }
+"ui.highlight" = { bg = "color8" }
+"ui.virtual.indent-guide" = { fg = "color8" }
+"ui.virtual.ruler" = { bg = "color8" }
+
+"diagnostic.error" = { underline = { color = "color1", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "color3", style = "curl" } }
+"diagnostic.info" = { underline = { color = "color4", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "color2", style = "curl" } }
+
+"error" = { fg = "color1" }
+"warning" = { fg = "color3" }
+"info" = { fg = "color4" }
+"hint" = { fg = "color2" }
+
+"comment" = { fg = "color8", modifiers = ["italic"] }
+"constant" = { fg = "color3" }
+"constant.numeric" = { fg = "color3" }
+"constant.character.escape" = { fg = "color5" }
+"string" = { fg = "color2" }
+"string.regexp" = { fg = "color5" }
+"type" = { fg = "color4" }
+"type.builtin" = { fg = "color4", modifiers = ["bold"] }
+"constructor" = { fg = "color4" }
+"variable" = { fg = "foreground" }
+"variable.builtin" = { fg = "color5", modifiers = ["italic"] }
+"variable.parameter" = { fg = "color13" }
+"label" = { fg = "color4" }
+"punctuation" = { fg = "color7" }
+"punctuation.delimiter" = { fg = "color7" }
+"keyword" = { fg = "color5", modifiers = ["bold"] }
+"keyword.control" = { fg = "color5" }
+"keyword.control.return" = { fg = "color1" }
+"keyword.function" = { fg = "color5", modifiers = ["bold"] }
+"keyword.operator" = { fg = "color5" }
+"operator" = { fg = "color6" }
+"function" = { fg = "color4", modifiers = ["bold"] }
+"function.builtin" = { fg = "color6" }
+"function.macro" = { fg = "color5" }
+"tag" = { fg = "color4" }
+"attribute" = { fg = "color3" }
+"namespace" = { fg = "color6" }
+"special" = { fg = "color5" }
+"markup.heading" = { fg = "color4", modifiers = ["bold"] }
+"markup.list" = { fg = "color5" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "color6", modifiers = ["underlined"] }
+"markup.link.text" = { fg = "color4" }
+"markup.raw" = { fg = "color2" }
+"diff.plus" = { fg = "color2" }
+"diff.minus" = { fg = "color1" }
+"diff.delta" = { fg = "color3" }
+
+[palette]
+background = "%%background%%"
+foreground = "%%foreground%%"
+color0  = "%%color0.hex%%"
+color1  = "%%color1.hex%%"
+color2  = "%%color2.hex%%"
+color3  = "%%color3.hex%%"
+color4  = "%%color4.hex%%"
+color5  = "%%color5.hex%%"
+color6  = "%%color6.hex%%"
+color7  = "%%color7.hex%%"
+color8  = "%%color8.hex%%"
+color9  = "%%color9.hex%%"
+color10 = "%%color10.hex%%"
+color11 = "%%color11.hex%%"
+color12 = "%%color12.hex%%"
+color13 = "%%color13.hex%%"
+color14 = "%%color14.hex%%"
+color15 = "%%color15.hex%%"

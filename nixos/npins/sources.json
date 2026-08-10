@@ -1,0 +1,102 @@
+{
+  "pins": {
+    "den": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "vic",
+        "repo": "den"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "6cc4153ae863db77e082d0f1aa78524a10c95e67",
+      "url": "https://github.com/vic/den/archive/6cc4153ae863db77e082d0f1aa78524a10c95e67.tar.gz",
+      "hash": "sha256-WD0GSNgFNVPAiuwN+qm0AWCUx+CtxGDOElzH7fr3eq4="
+    },
+    "flake-aspects": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "vic",
+        "repo": "flake-aspects"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "56fa8d4d4772d58eb7f9d66c28c1cd2762b60423",
+      "url": "https://github.com/vic/flake-aspects/archive/56fa8d4d4772d58eb7f9d66c28c1cd2762b60423.tar.gz",
+      "hash": "sha256-a0kjpCZGnD5lt7yW6C3hzPhSf5KjnTyvX6XZ2NuhGs4="
+    },
+    "hjem": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "feel-co",
+        "repo": "hjem"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "b610953d0c56da6b28fd39c21bd193b88e91341c",
+      "url": "https://github.com/feel-co/hjem/archive/b610953d0c56da6b28fd39c21bd193b88e91341c.tar.gz",
+      "hash": "sha256-qwppDYdtxqtDpI1iSp7bs8prOJ0KQSvhJchfROD04f0="
+    },
+    "import-tree": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "vic",
+        "repo": "import-tree"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "4ebb10ae17d5f1ad366e7aef5b92cb8eecf24f69",
+      "url": "https://github.com/vic/import-tree/archive/4ebb10ae17d5f1ad366e7aef5b92cb8eecf24f69.tar.gz",
+      "hash": "sha256-iI88R3wHz8wTKQb5orvpc51L/Xr64AJyxid/0MKa/b8="
+    },
+    "nix-maid": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "viperml",
+        "repo": "nix-maid"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "0e0feba21016c1285382e32ea894ace731f49d3b",
+      "url": "https://github.com/viperml/nix-maid/archive/0e0feba21016c1285382e32ea894ace731f49d3b.tar.gz",
+      "hash": "sha256-SxgdtD4DBslk8u5MIzh4Hs/7vcuPHn4cD2h5I3Mufz4="
+    },
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixpkgs-unstable",
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1048658.70ce23431213/nixexprs.tar.xz",
+      "hash": "sha256-7UJK0pRtDvDUfAMLP1bQDxXg6iDI30dGQQQCPtQVzgM="
+    },
+    "smfh": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "feel-co",
+        "repo": "smfh"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "d4636e2adbfff58f0e2cc25e795d9844e7208f65",
+      "url": "https://github.com/feel-co/smfh/archive/d4636e2adbfff58f0e2cc25e795d9844e7208f65.tar.gz",
+      "hash": "sha256-+Gw0vFNMq8xLNyAiVOAIokFSMAoMpTcBcgq65EgRRW4="
+    },
+    "with-inputs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "vic",
+        "repo": "with-inputs"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "bae062d25220d7970e1d73856b966e8287853f28",
+      "url": "https://github.com/vic/with-inputs/archive/bae062d25220d7970e1d73856b966e8287853f28.tar.gz",
+      "hash": "sha256-jsPUcrjTv+JbPJjp5g3TX8t38QTmuZY9niQlHAUuGy0="
+    }
+  },
+  "version": 7
+}

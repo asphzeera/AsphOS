@@ -1,0 +1,158 @@
+/* Importa as cores geradas pelo hellwal no cache */
+@import "../../.cache/hellwal/waybar-colors.css";
+
+/* MAPEAMENTO DINÂMICO 
+   Aqui vinculamos os nomes que você já usa no CSS 
+   às variáveis que o Hellwal gera no template.
+*/
+@define-color black      @color0;
+@define-color red        @color1;
+@define-color green      @color2;
+@define-color yellow     @color3;
+@define-color blue       @color4;
+@define-color magenta    @color5;
+@define-color cyan       @color6;
+@define-color white      @color7;
+@define-color orange     @color13; /* Geralmente a cor de destaque vibrante no hellwal */
+
+/* Background e Foreground principais */
+@define-color background-light @color8; 
+
+/* Module-specific colors (Mantendo sua lógica de organização) */
+@define-color workspaces-color @foreground;
+@define-color workspaces-focused-bg @green;
+@define-color workspaces-focused-fg @cyan;
+@define-color workspaces-urgent-bg @red;
+@define-color workspaces-urgent-fg @black;
+
+/* Text and border colors for modules */
+@define-color mode-color @orange;
+@define-color group-hardware-color @blue;
+@define-color group-session-color @red;
+@define-color clock-color @blue;
+@define-color cpu-color @green;
+@define-color memory-color @magenta;
+@define-color temperature-color @yellow;
+@define-color temperature-critical-color @red;
+@define-color battery-color @cyan;
+@define-color battery-charging-color @green;
+@define-color battery-warning-color @yellow;
+@define-color battery-critical-color @red;
+@define-color network-color @blue;
+@define-color network-disconnected-color @red;
+@define-color pulseaudio-color @orange;
+@define-color pulseaudio-muted-color @red;
+@define-color wireplumber-color @orange;
+@define-color wireplumber-muted-color @red;
+@define-color backlight-color @yellow;
+@define-color disk-color @cyan;
+@define-color updates-color @orange;
+@define-color quote-color @green;
+@define-color idle-inhibitor-color @foreground;
+@define-color idle-inhibitor-active-color @red;
+@define-color power-profiles-daemon-color @cyan;
+@define-color power-profiles-daemon-performance-color @red;
+@define-color power-profiles-daemon-balanced-color @yellow;
+@define-color power-profiles-daemon-power-saver-color @green;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font Propo";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @background;
+    color: @foreground;
+}
+
+/* Common module styling with border-bottom */
+#mode,
+#custom-hardware-wrap,
+#custom-session-wrap,
+#clock,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#network,
+#pulseaudio,
+#wireplumber,
+#backlight,
+#disk,
+#power-profiles-daemon,
+#idle_inhibitor,
+#tray {
+    padding: 0 10px;
+    margin: 0 2px;
+    border-bottom: 2px solid transparent;
+    background-color: transparent;
+}
+
+/* Workspaces styling */
+#workspaces button {
+    padding: 0 10px;
+    background-color: transparent;
+    color: @workspaces-color;
+    margin: 0;
+}
+
+#workspaces button:hover {
+    background: @background-light;
+    box-shadow: inherit;
+}
+
+#workspaces button.focused {
+    box-shadow: inset 0 -2px @workspaces-focused-fg;
+    color: @workspaces-focused-fg;
+    font-weight: 900;
+}
+
+#workspaces button.urgent {
+    background-color: @workspaces-urgent-bg;
+    color: @workspaces-urgent-fg;
+}
+
+/* Module-specific styling */
+#niri-workspaces span { color: @color13; }
+#mode { color: @mode-color; border-bottom-color: @mode-color; }
+#custom-hardware-wrap { color: @group-hardware-color; border-bottom-color: @group-hardware-color; }
+#custom-session-wrap { color: @group-session-color; border-bottom-color: @group-session-color; }
+#clock { color: @clock-color; border-bottom-color: @clock-color; }
+#cpu { color: @cpu-color; border-bottom-color: @cpu-color; }
+#memory { color: @memory-color; border-bottom-color: @memory-color; }
+#temperature { color: @temperature-color; border-bottom-color: @temperature-color; }
+#temperature.critical { color: @temperature-critical-color; border-bottom-color: @temperature-critical-color; }
+#power-profiles-daemon { color: @power-profiles-daemon-color; border-bottom-color: @power-profiles-daemon-color; }
+#power-profiles-daemon.performance { color: @power-profiles-daemon-performance-color; border-bottom-color: @power-profiles-daemon-performance-color; }
+#power-profiles-daemon.balanced { color: @power-profiles-daemon-balanced-color; border-bottom-color: @power-profiles-daemon-balanced-color; }
+#power-profiles-daemon.power-saver { color: @power-profiles-daemon-power-saver-color; border-bottom-color: @power-profiles-daemon-power-saver-color; }
+#battery { color: @battery-color; border-bottom-color: @battery-color; }
+#battery.charging, #battery.plugged { color: @battery-charging-color; border-bottom-color: @battery-charging-color; }
+#battery.warning:not(.charging) { color: @battery-warning-color; border-bottom-color: @battery-warning-color; }
+#battery.critical:not(.charging) { color: @battery-critical-color; border-bottom-color: @battery-critical-color; }
+#network { color: @network-color; border-bottom-color: @network-color; }
+#network.disconnected { color: @network-disconnected-color; border-bottom-color: @network-disconnected-color; }
+#pulseaudio { color: @pulseaudio-color; border-bottom-color: @pulseaudio-color; }
+#pulseaudio.muted { color: @pulseaudio-muted-color; border-bottom-color: @pulseaudio-muted-color; }
+#wireplumber { color: @wireplumber-color; border-bottom-color: @wireplumber-color; }
+#wireplumber.muted { color: @wireplumber-muted-color; border-bottom-color: @wireplumber-muted-color; }
+#backlight { color: @backlight-color; border-bottom-color: @backlight-color; }
+#disk { color: @disk-color; border-bottom-color: @disk-color; }
+#idle_inhibitor { color: @idle-inhibitor-color; border-bottom-color: transparent; }
+#idle_inhibitor.activated { color: @idle-inhibitor-active-color; border-bottom-color: @idle-inhibitor-active-color; }
+
+#tray {
+    background-color: transparent;
+    padding: 0 10px;
+    margin: 0 2px;
+}
+
+#tray>.passive { -gtk-icon-effect: dim; }
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    color: @red;
+    border-bottom-color: @red;
+}
